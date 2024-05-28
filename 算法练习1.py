@@ -7,7 +7,7 @@ def deal_data(set,to_set,time):    # time取值为24或者60
         else:
             time_diff = time_diff2
     elif to_set > set:
-        time_diff1 = to_set - set     #这里就是设定时间在实时时间之前时的两种情况
+        time_diff1 = to_set - set     #这里就是设定时间在实时时间之后时的两种情况
         time_diff2 = set + (time - to_set)
         if time_diff2 > time_diff1:
             time_diff = time_diff1
